@@ -1,12 +1,13 @@
-# Less
-Less solutions and prototypes
+# Briev Less example
+Briev less solution for css re-use problems.
 
 ## Getting started
 ### Install using NPM
 npm install -g less
 ### Compile your file
 <b>lessc styles.less styles.css</b>
-### The less file has two variables (@base and @boxlength) and one function (.box)
+#### The less file has two variables (@base and @boxlength) and one function (.box)
+#### Pay attention on re-use .box function to .shadow properties!!!
 ```css
 @base: #f9aaab;
 @boxlength: 200px;
@@ -26,3 +27,4 @@ npm install -g less
 	.box( lighten(@base, 10%), @boxlength * 2 )
 }
 ```
+## Please contact-me to questions or contributions: marcusviniciuspitz@ioapps.com.br
