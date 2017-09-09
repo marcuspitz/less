@@ -1,0 +1,21 @@
+/**
+* author: Marcus Pitz, 2017.
+* Simple LESS usage
+**/
+@base: #f9aaab;
+@boxlength: 200px;
+
+.box {
+	border: solid;
+	.box(@base)
+}
+
+.box(@color, @alphalength: @boxlength)  {
+	background-color: @color;	
+	width: @alphalength;
+	height: @alphalength;
+}
+
+.shadow {	
+	.box( lighten(@base, 10%), @boxlength * 2 )
+}
